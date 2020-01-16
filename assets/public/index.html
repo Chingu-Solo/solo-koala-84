@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Epic Fonts</title>
+    <link rel="stylesheet" href="FontAwesome/css/all.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <div class="header flex">
       <div class="title">
         <h1 id="title">Epic Fonts</h1>
       </div>
@@ -20,8 +21,19 @@
           <a href="#">About Us</a>
         </nav>
       </div>
-    </header>
+    </div>
     <hr />
+    <div class="main flex">
+      <div class="options flex">
+        <input type="text" id="search" placeholder="Search" />
+        <input type="text" id="sample" placeholder="Change text" />
+        <input type="number" min="1" max="100" value="40" id="pixel" />
+        <input type="range" min="1" max="100" value="40" id="pixelSlide" />
+        <button id="night-mode"><i class="fas fa-moon"></i></button>
+        <button id="grid-list"><i class="fas fa-border-all"></i></button>
+        <button id="reset"><i class="fas fa-undo-alt"></i></button>
+      </div>
+    </div>
 
     <script type="text/javascript" src="script.js"></script>
   </body>
