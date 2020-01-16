@@ -42,5 +42,14 @@ input:focus {
   outline: none;
 }
 
+/* Card */
+
+.card {
+  border-top: 1px solid black;
+  width: 27%;
+  padding-left: 1vw;
+  margin-top: 2vh;
+}
+
 @media all and (max-width: 500px) {
 }
