@@ -51,5 +51,15 @@ input:focus {
   margin-top: 2vh;
 }
 
+.button {
+  float: right;
+}
+
+/* Footer */
+
+.footer {
+  margin: 5vh 0;
+}
+
 @media all and (max-width: 500px) {
 }
