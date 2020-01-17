@@ -1,0 +1,120 @@
+/* Flex stuff */
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.options {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 90%;
+  height: 4vh;
+  padding: 0 1%;
+  align-items: center;
+}
+
+#search,
+#sample,
+#pixelSlide {
+  flex-grow: 2;
+}
+
+#pixel,
+#night-mode,
+#layout,
+#reset {
+  flex-grow: 0;
+  padding-left: 1em;
+}
+
+/* Button and inputs */
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#topContainer {
+  position: sticky;
+  bottom: 4%;
+  float: right;
+  background: transparent;
+}
+
+#backtotop_js {
+  display: none;
+  font-size: 2em;
+  background: transparent;
+}
+
+/* Card */
+
+.card {
+  border-top: 1px solid black;
+  width: 27%;
+  padding-left: 1vw;
+  margin-top: 2vh;
+  word-wrap: break-word;
+  justify-content: flex-start;
+}
+
+.card-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.button {
+  float: right;
+}
+
+/* Dark mode */
+
+.dark,
+.dark * {
+  background-color: #222;
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+/* Footer */
+
+.footer {
+  margin: 5vh 0;
+}
+
+/* Media queries */
+
+@media all and (max-width: 760px) {
+  .card {
+    width: 40%;
+  }
+
+  #layout,
+  #pixelSlide {
+    display: none;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .card {
+    width: 80%;
+  }
+
+  #reset,
+  #sample,
+  #pixel {
+    display: none;
+  }
+}

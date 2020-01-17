@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Epic Fonts</title>
+    <link rel="stylesheet" href="FontAwesome/css/all.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="header flex">
+      <div class="title">
+        <h1 id="title">Epic Fonts</h1>
+      </div>
+      <div class="nav">
+        <nav>
+          <a href="#">Catalog</a>
+          <a href="#">Featured</a>
+          <a href="#">Articles</a>
+          <a href="#">About Us</a>
+        </nav>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="main flex" id="main">
+      <div class="options flex">
+        <input type="text" id="search" placeholder="Search" />
+        <input type="text" id="sample" placeholder="Change text" />
+        <input type="number" min="8" max="300" value="40" id="pixel" />
+        <input type="range" min="8" max="300" value="40" id="pixelSlide" />
+        <a href="#" id="night-mode"><i class="fas fa-moon"></i></a>
+        <a href="#" id="layout"><i class="fas fa-list"></i></a>
+        <a href="#" id="reset"><i class="fas fa-undo-alt"></i></a>
+      </div>
+    </div>
+
+    <div id="topContainer">
+      <button id="backtotop_js"><i class="fas fa-angle-up"></i></button>
+    </div>
+
+    <div class="footer flex">
+      <span>coded by Tototomi258 | 2020 | Chingu Solo Project</span>
+    </div>
+
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
