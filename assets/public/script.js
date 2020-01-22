@@ -59,7 +59,7 @@ var fonts = [
 for (var i = 0; i < fonts.length; i++) {
   var e = document.createElement("div");
   e.setAttribute("class", "card flex");
-  e.innerHTML = `<div style="width: 80%;"><h3 class="name" style="margin: 1em 0 0 0;">${fonts[i].name}</h3></div><div style="width: 20%"><a href="#" class="button"><i class="fas fa-plus-circle"></i></a></div><div style="width: 100%;"><h5 style="margin: 1em 0 0 0;">${fonts[i].creator}</h5></div><div class="card-child"> <h1 class="example-text" style="font-family:${fonts[i].name}; font-size: 40px;">The quick brown fox.</h1></div>`;
+  e.innerHTML = `<div style="width: 80%;"><h3 class="name" style="margin: 1em 0 0 0;">${fonts[i].name}</h3></div><div style="width: 20%"><a href="#" class="button"><i class="fas fa-plus-circle"></i></a></div><div class="author" style="width: 100%;"><h5 style="margin: 1em 0 0 0;">${fonts[i].creator}</h5></div><div class="card-child"> <h1 class="example-text" style="font-family:${fonts[i].name}; font-size: 40px;">The quick brown fox.</h1></div>`;
   main.appendChild(e);
 }
 
